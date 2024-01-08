@@ -1,0 +1,73 @@
+version: '3.8'
+services:
+  # client_mobile:
+  #   build:
+  #     context: ./client-mobile
+  #   volumes:
+  #     - ./client-mobile:/app
+  #   environment:
+  #     - EAS_USERNAME=anat94
+  #     - EAS_PASSWORD=JhWvbRSm&dqmNq9
+  #     - EXPO_TOKEN=FRVPWvL11mmZgRx_yls77rPG3i_QUS1SEaiGT85E
+
+  client_web:
+    build:
+      context: ./client-web
+    ports:
+      - "8081:8081"
+    depends_on:
+      - server
+    volumes:
+      - ./client-web:/app
+
+  server:
+    build:
+      context: ./backendNew
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./backendNew:/app
+    depends_on:
+      - db
+    command: ["./wait-for-it.sh", "db:3306", "--", "python", "manage.py", "runserver", "0.0.0.0:8080"]
+    environment:
+      - DJANGO_DB_HOST=db
+      - DJANGO_DB_PORT=3306
+      - DJANGO_DB_NAME=area
+      - DJANGO_DB_USER=Test
+      - DJANGO_DB_PASSWORD=#Test1234
+    restart: always
+
+  db:
+    image: mysql:8.0.31
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=#Titou930
+      - MYSQL_DATABASE=area
+      - MYSQL_USER=Test
+      - MYSQL_PASSWORD=#Test1234
+    volumes:
+      - ./sql-scripts:/docker-entrypoint-initdb.d
+
+  # client_discord:
+  #   build:
+  #     context: ./client-discord
+  #   ports:
+  #     - "808:8082"
+  #   volumes:
+  #     - ./client-discord:/app
+  #   restart: always
+
+  service:
+    build:
+      context: ./ActionBackend/ActionBackend
+    volumes:
+      - ./ActionBackend/ActionBackend:/app
+    restart: always
+
+  unit_test:
+    build:
+      context: ./backendNew
+    command: ["./wait-for-it.sh", "db:3306", "--", "python", "manage.py", "test", "backendNew/tests"]
+

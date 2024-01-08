@@ -1,0 +1,118 @@
+<div class="overlay-modal" [hidden]="plateformSelected">
+    <div class="modal-container" [ngStyle]="{'width': phoneDisplay ? '80%': 'fit-content'}">
+        <h2 class="modal-title">{{modalTitles[type]}}</h2>
+        <div class="area-type-selection">
+            <div *ngFor="let t of availablePlateforms" class="area-type-icon">
+                <img [src]="themeService.onlineAssets[t + '_logo']" width="auto" height="100%" (click)="openAreaSelectionFromCategory(type, t)"/>
+            </div>
+        </div>
+        <div class="close-modal" (click)="closeModal()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="auto" fill="#FFFFFF" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+        </div>
+    </div>
+</div>
+<div class="overlay-modal" [hidden]="!plateformSelected || tokenAddModalOpen">
+    <div class="modal-container" [ngStyle]="{'width': phoneDisplay ? '80%': 'fit-content'}">
+        <h2 class="modal-title">
+            <img [src]="themeService.onlineAssets[plateformSelected + '_logo']" width="5vh" height="5vh" class="title-logo" />
+        </h2>
+        <h2 class="modal-subtitle" [hidden]="plateformSelected?.toLowerCase() !== 'github'">Setting up whebooks for github Actions / Reactions is necessary:</h2>
+        <a target="_blank" href="https://github.com/apps/area-webhooks" [hidden]="plateformSelected?.toLowerCase() !== 'github'">GitHub Webhook setup</a><br [hidden]="plateformSelected?.toLowerCase() !== 'github'"/>
+        <div class="area-type-selection">
+            <div *ngFor="let t of getPlateformServices()" class="action-container" (click)="selectAction(plateformSelected ? plateformSelected : 'default', t)">
+                <div class="action-logo">
+                    <fa-icon [icon]="icons[idIconsMap[t.id]]" class="action-logo-fas" [ngStyle]="{'color': trimColors[t.plateform.toLowerCase()]}"></fa-icon>
+                </div>
+                <h2 class="action-title">{{ t.action }}</h2>
+            </div>
+        </div>
+        <div class="close-modal" (click)="returnFromSelectedPlateform()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="auto" fill="#FFFFFF" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288 480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128z"/></svg>
+        </div>
+    </div>
+</div>
+
+<div class="overlay-modal" [hidden]="!tokenAddModalOpen">
+    <div class="modal-container" [ngStyle]="{'width': phoneDisplay ? '80%': 'fit-content'}">
+        <h2 class="modal-title" [hidden]="plateformSelected?.toLowerCase() !== 'discord'">
+            Choose Discord Server:
+        </h2>
+        <h2 class="modal-title" [hidden]="plateformSelected?.toLowerCase() !== 'sheet'">
+            Enter the Spreadsheet name:
+        </h2>
+        <h2 class="modal-title" [hidden]="plateformSelected?.toLowerCase() !== 'email'">
+            Enter the email to send info to:
+        </h2>
+        <h2 class="modal-title" [hidden]="plateformSelected?.toLowerCase() !== 'chess'">
+            Enter the chess.com account username:
+        </h2>
+        <h2 class="modal-title" [hidden]="plateformSelected?.toLowerCase() !== 'spotify'">
+            Enter the playlist / track / artist / user ID:
+        </h2>
+        <h2 class="modal-title" [hidden]="plateformSelected?.toLowerCase() !== 'twitter'">
+            Enter Twitter username:
+        </h2>
+        <h2 class="modal-title" [hidden]="plateformSelected?.toLowerCase() !== 'github' || tempActionSelected?.id !== 26">
+            Enter Repository name:
+        </h2>
+        <h2 class="modal-title" [hidden]="plateformSelected?.toLowerCase() !== 'weather'">
+            Enter Location to track (ex: 'Paris'):
+        </h2>
+        <h2 class="modal-title" [hidden]="plateformSelected?.toLowerCase() !== 'clashroyale'">
+            Enter Player Tag:
+        </h2>
+        <h2 class="modal-title" [hidden]="plateformSelected?.toLowerCase() !== 'clashofclans'">
+            Enter Player Tag:
+        </h2>
+        <h2 class="modal-title" [hidden]="plateformSelected?.toLowerCase() !== 'coingecko'">
+            Enter Trigger value:
+        </h2>
+        <h2 class="modal-title" [hidden]="plateformSelected?.toLowerCase() !== 'twitch'">
+            Enter Twitch Username:
+        </h2>
+        <h2 class="modal-title" [hidden]="plateformSelected?.toLowerCase() !== 'tft'">
+            Enter TFT Username:
+        </h2>
+        <h2 class="modal-title" [hidden]="plateformSelected?.toLowerCase() !== 'brawlstar'">
+            Enter Player Tag:
+        </h2>
+        <h2 class="modal-title" [hidden]="plateformSelected?.toLowerCase() !== 'datetime'">
+            Enter date & time of trigger (MM/dd/yy hh:mm:ss):
+        </h2>
+        <h2 class="modal-title" [hidden]="plateformSelected?.toLowerCase() !== 'trello' || tempActionSelected?.id === 56">
+            Enter Trello Organisation:
+        </h2>
+        <h2 class="modal-title" [hidden]="plateformSelected?.toLowerCase() !== 'trello' || tempActionSelected?.id === 55">
+            Select Trello Board:
+        </h2>
+        <input class="input-modal-final" name="token" placeholder="value..." [(ngModel)]="tokenEntered" [hidden]="plateformSelected?.toLowerCase() === 'discord' || (plateformSelected?.toLowerCase() === 'trello' && tempActionSelected?.id === 56)"/><br/>
+        <h2 class="modal-subtitle" [hidden]="plateformSelected?.toLowerCase() !== 'discord'">
+            Having the following discord bot on your server is mandatory:<br/>
+        </h2>
+        <a target="_blank" href="https://discord.com/api/oauth2/authorize?client_id=1155453684822581319&permissions=8&scope=bot" [hidden]="plateformSelected?.toLowerCase() !== 'discord'">Click me !</a><br/>
+        <div [hidden]="plateformSelected?.toLowerCase() !== 'discord'">
+            <mat-form-field>
+                <mat-label>Select Discord Server</mat-label>
+                <mat-select [(value)]="selectedGuild">
+                    <mat-option *ngFor="let guild of discordGuilds" [value]="guild.id">
+                        {{ guild.name }}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div [hidden]="plateformSelected?.toLowerCase() !== 'trello' || tempActionSelected?.id === 55">
+            <mat-form-field>
+                <mat-label>Select Trello Board</mat-label>
+                <mat-select [(value)]="selectedBoard">
+                    <mat-option *ngFor="let board of trelloBoards" [value]="board.id">
+                        {{ board.name }}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <button class="submit-btn" (click)="selectAction(plateformSelected ? plateformSelected : 'default', tempActionSelected, 'submit')">Submit</button>
+        <div class="close-modal" (click)="returnFromSelectedAction()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="auto" fill="#FFFFFF" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288 480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128z"/></svg>
+        </div>
+    </div>
+</div>

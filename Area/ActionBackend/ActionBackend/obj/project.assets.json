@@ -1,0 +1,190 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "MySqlClient/5.5.1": {
+        "type": "package",
+        "dependencies": {
+          "MySqlConnector": "2.2.0",
+          "Savage.Data": "5.5.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Savage.Data.MySqlClient.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Savage.Data.MySqlClient.dll": {}
+        }
+      },
+      "MySqlConnector/2.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MySqlConnector.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MySqlConnector.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OptimizedDataReader/1.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Savage.OptimizedDataReader.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Savage.OptimizedDataReader.dll": {}
+        }
+      },
+      "Savage.Data/5.5.1": {
+        "type": "package",
+        "dependencies": {
+          "OptimizedDataReader": "1.1.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Savage.Data.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Savage.Data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MySqlClient/5.5.1": {
+      "sha512": "F7v+LG3pxi178u5rmnvyFAO+hIYbUiq1dZnn1Xd8DGqO49bfGB94tRvFSBchaLLBQ7X1kJ3Mpu08gyIrh96gGg==",
+      "type": "package",
+      "path": "mysqlclient/5.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Savage.Data.MySqlClient.dll",
+        "mysqlclient.5.5.1.nupkg.sha512",
+        "mysqlclient.nuspec"
+      ]
+    },
+    "MySqlConnector/2.2.0": {
+      "sha512": "RjJlqd22Vtuii7voNV8oyqhekDTmiMUW4legga9bFaJaT+hbyKbwY4/99FZRWkNryVW1BUCZ7GR/N8qhy5155A==",
+      "type": "package",
+      "path": "mysqlconnector/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net461/MySqlConnector.dll",
+        "lib/net461/MySqlConnector.xml",
+        "lib/net471/MySqlConnector.dll",
+        "lib/net471/MySqlConnector.xml",
+        "lib/net6.0/MySqlConnector.dll",
+        "lib/net6.0/MySqlConnector.xml",
+        "lib/net7.0/MySqlConnector.dll",
+        "lib/net7.0/MySqlConnector.xml",
+        "lib/netcoreapp3.1/MySqlConnector.dll",
+        "lib/netcoreapp3.1/MySqlConnector.xml",
+        "lib/netstandard2.0/MySqlConnector.dll",
+        "lib/netstandard2.0/MySqlConnector.xml",
+        "lib/netstandard2.1/MySqlConnector.dll",
+        "lib/netstandard2.1/MySqlConnector.xml",
+        "logo.png",
+        "mysqlconnector.2.2.0.nupkg.sha512",
+        "mysqlconnector.nuspec"
+      ]
+    },
+    "OptimizedDataReader/1.1.2": {
+      "sha512": "qk3sXxpL5Ak2bMG4ei0DZOWe6X5U1lCRwGxsrD0IQ/l2hln8rXHaFyXsoDx+5owxrKKEQqLhZGT6ojQi3+bfug==",
+      "type": "package",
+      "path": "optimizeddatareader/1.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Savage.OptimizedDataReader.dll",
+        "lib/net46/Savage.OptimizedDataReader.dll",
+        "lib/netstandard2.0/Savage.OptimizedDataReader.dll",
+        "optimizeddatareader.1.1.2.nupkg.sha512",
+        "optimizeddatareader.nuspec"
+      ]
+    },
+    "Savage.Data/5.5.1": {
+      "sha512": "xQXly+iz4UdeJAbWZ0xAz+3NBSC5gBn0eI/Uf0rt3YYsN0GxA7b5logkG7ilvCGXU4tt9V/zrlTWQW+7OaO5nw==",
+      "type": "package",
+      "path": "savage.data/5.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Savage.Data.dll",
+        "savage.data.5.5.1.nupkg.sha512",
+        "savage.data.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "MySqlClient >= 5.5.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\eliot\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\eliot\\Documents\\EPITECH\\area\\ActionBackend\\ActionBackend\\ActionBackend.csproj",
+      "projectName": "ActionBackend",
+      "projectPath": "C:\\Users\\eliot\\Documents\\EPITECH\\area\\ActionBackend\\ActionBackend\\ActionBackend.csproj",
+      "packagesPath": "C:\\Users\\eliot\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\eliot\\Documents\\EPITECH\\area\\ActionBackend\\ActionBackend\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\eliot\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "MySqlClient": {
+            "target": "Package",
+            "version": "[5.5.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

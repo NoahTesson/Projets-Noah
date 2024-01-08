@@ -1,0 +1,341 @@
+#main-modify-div {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#action-reaction-flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6%;
+    padding: 2%;
+    position: relative;
+    height: fit-content;
+    margin: 2rem 0;
+}
+
+.pen-icon {
+    font-size: 4vh;
+    color: #FFFFFF;
+}
+
+.error-message {
+    color: red;
+    font-size: 1.5vh;
+    position: relative;
+    text-align: center;
+}
+
+.edit-area {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #4D94FF;
+    width: 4vh;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 100rem;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: 0.2s ease all 0s;
+}
+
+.edit-area:hover {
+    background: #0066FF;
+    transition: 0.2s ease all 0s;
+}
+
+.remove-area {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #CA6364;
+    width: 4vh;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 100rem;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: 0.2s ease all 0s;
+}
+
+.remove-area:hover {
+    background: #732322;
+    transition: 0.2s ease all 0s;
+}
+
+.area-item-container {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    overflow-y: scroll;
+    gap: 1rem;
+}
+
+/* .area-item-container::-webkit-scrollbar {
+    display: none;
+} */
+
+.add-icon {
+    border-radius: 100rem;
+    width: 3vh;
+    padding: 0.5rem 4rem;
+    height: 3vh;
+    transition: 0.2s ease all 0s;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.add-icon:hover {
+    transition: 0.2s ease all 0s;
+    background: #e6e6e6;
+}
+
+.blue-container {
+    position: relative;
+    width: 40%;
+    min-height: 60vh;
+    background: #0066FF;
+    border-radius: 2rem;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+}
+
+#rect-diagonal-header {
+    position: relative;
+    top: -12vh;
+    right: 0;
+    width: 150%;
+    height: 30vh;
+    transform: rotateZ(5deg);
+    background: #e6e6e6;
+}
+
+.main-content-label {
+    margin: 0;
+    font-weight: 500;
+    font-size: 2vh;
+}
+
+.input-box {
+    margin: 1rem 0;
+    width: calc(100% - 2rem);
+    background: #FFFFFF;
+    border: 0;
+    font-size: 1.5vh;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.desc-input {
+    font-family: 'Montserrat', sans-serif;
+    height: 10vh;
+}
+
+.header-area {
+    width: 90%;
+    margin-top: 5%;
+    position: relative;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.header-text {
+    position: relative;
+    font-size: 1.5rem;
+    color: #000000;
+    text-align: center;
+    width: 100%;
+    font-weight: 500;
+}
+
+.white-header-area {
+    position: absolute;
+    top: -50vh;
+    right: 0;
+    transform: rotateZ(30deg);
+    background: white;
+    height: 80vh;
+    width: 100%;
+}
+
+#area-modify-title {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: -5vh;
+    color: #003380;
+    line-height: 10vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo-blue-top-registered {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20vw;
+    height: auto;
+}
+
+#return-btn {
+    width: fit-content;
+    height: 4vh;
+    background: #CA6364;
+    padding: 0.5rem 4rem;
+    border-radius: 100rem;
+    position: fixed;
+    left: 2vh;
+    top: 10vh;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+    transition: 0.2s ease all 0s;
+}
+
+.action-plateform {
+    margin: 0;
+}
+
+.logo-action {
+    position: relative;
+    width: 4vh;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 100rem;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.area-item-list {
+    position: relative;
+    top: 0;
+    width: 90%;
+    height: fit-content;
+    max-height: 50%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.action-description {
+    margin: 0;
+    margin-top: 0.5rem;
+    font-weight: 400;
+}
+
+.text-action-flex {
+    height: fit-content;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 1rem;
+}
+
+.action-item {
+    position: relative;
+    width: 90%;
+    border-radius: 100rem;
+    background: #ffffff;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 0;
+}
+
+#return-btn:hover {
+    background: #732322;
+    transition: 0.2s ease all 0s;
+}
+
+#submit-area {
+    position: relative;
+    width: fit-content;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0066FF;
+    padding: 1rem 4rem;
+    border-radius: 100rem;
+    margin-bottom: 50px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+    transition: 0.2s ease all 0s;
+    cursor: pointer;
+}
+
+#submit-area:hover {
+    transition: 0.2s ease all 0s;
+    background: #003380;
+}
+
+#delete-area {
+    position: relative;
+    width: fit-content;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #CA6364;
+    padding: 1rem 4rem;
+    border-radius: 100rem;
+    margin-bottom: 50px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+    transition: 0.2s ease all 0s;
+    cursor: pointer;
+}
+
+#delete-area:hover {
+    transition: 0.2s ease all 0s;
+    background: #732322;
+}
+
+.area-submit-text {
+    color: white;
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.btns-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#main-content-div {
+    position: relative;
+    padding: 2vh 5vw;
+    width: calc(80% - 5vw);
+    left: calc(10% - 2.5vw);
+    margin-top: 5vh;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+    background: #e6e6e6;
+    border-radius: 2rem;
+}

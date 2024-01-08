@@ -1,0 +1,4 @@
+documentation/_templates
+documentation/_static
+documentation/_build/latex
+documentation/_build/doctrees

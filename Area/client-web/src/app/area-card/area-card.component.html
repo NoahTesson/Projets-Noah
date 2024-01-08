@@ -1,0 +1,36 @@
+<div class="area-card" [ngStyle]="{
+    'height': height,
+    'width': width
+}">
+    <svg class="side-svg" width="20vh" height="auto" viewBox="0 0 216 303" [attr.fill]="trimColor" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d_237_103)">
+        <path d="M121.298 218.922L63.2722 415.538L-86.6549 371.291C-97.2488 368.165 -103.302 357.042 -100.176 346.448L-47.8109 169.014L121.298 218.922Z" [attr.fill]="trimColor"/>
+        <path d="M205.365 -65.9318L149.604 123.012L-19.5055 73.1036L30.595 -96.6578C33.7215 -107.252 44.8442 -113.305 55.4381 -110.179L205.365 -65.9318Z" [attr.fill]="trimColor"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M45.1944 263.191C77.2205 272.642 109.528 258.803 117.356 232.28L130.989 186.086C129.2 192.148 121.736 195.288 114.416 193.127C96.2675 187.771 84.9545 171.187 89.3901 156.158C93.8257 141.128 112.33 133.344 130.478 138.7C137.799 140.86 142.362 147.55 140.573 153.612L154.678 105.817C162.506 79.2928 142.889 50.1302 110.863 40.6786L-0.257851 7.8843C-5.7774 26.5868 -6.60313 29.3847 -14.4309 55.9085L-55.7364 195.869C-65.9263 230.396 -24.3759 242.659 -65.9263 230.396L45.1944 263.191Z" [attr.fill]="trimColor"/>
+        </g>
+        <defs>
+        <filter id="filter0_d_237_103" x="-110.999" y="-117.002" width="326.364" height="546.541" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="4"/>
+        <feGaussianBlur stdDeviation="5"/>
+        <feComposite in2="hardAlpha" operator="out"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_237_103"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_237_103" result="shape"/>
+        </filter>
+        </defs>
+    </svg>
+    <div class="area-card-action-img">
+        <img [src]="theme.onlineAssets[this.actionLogo]" width="100%" height="100%"/>
+    </div>
+    <h2 class="card-title">{{ title }}</h2>
+    <div class="action-list">
+        <div *ngFor="let imgSrc of reactionLogoList" class="area-card-reaction-img">
+            <img [src]="imgSrc" width="100%" height="100%"/>
+        </div>
+    </div>
+    <div class="hover-overlay" (click)="navigateToPage('/areamodify')">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg>
+    </div>
+</div>

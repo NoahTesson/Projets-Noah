@@ -1,0 +1,145 @@
+import { Injectable } from '@angular/core';
+import { faBitcoin, faEthereum, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { IconDefinition, faAddressCard, faClock, faComments, faEnvelope, faImage, faMessage, faPenToSquare, faSquareMinus, faSquarePlus, faTrashCan } from '@fortawesome/free-regular-svg-icons';
+import { faAt, faChess, faCircleMinus, faCirclePlus, faCloudSunRain, faCodeCommit, faFileCirclePlus, faFont, faHandHoldingMedical, faHeartCirclePlus, faLandmark, faList, faLocationDot, faMusic, faPersonCircleExclamation, faPlus, faRightToBracket, faSquarePen, faSquareXmark, faTemperatureHalf, faThumbTack, faTrophy, faUserCheck, faUserPlus, faUserSlash, faUserXmark, faVideo } from '@fortawesome/free-solid-svg-icons';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class HelperService {
+  public idIconsMap: { [key: number]: string} = {
+    1: 'update',
+    2: 'typing',
+    3: 'join',
+    4: 'remove',
+    5: 'ban',
+    6: 'unban',
+    7: 'messages',
+    8: 'newsquare',
+    9: 'updatesquare',
+    10: 'delsquare',
+    11: 'pin',
+    12: 'tweet',
+    14: 'sheet',
+    15: 'email',
+    16: 'commit',
+    17: 'newsquare',
+    18: 'minusquare',
+    19: 'unfollowArtist',
+    20: 'followartist',
+    21: 'followartist',
+    22: 'unfollowArtist',
+    23: 'music',
+    24: 'music',
+    25: 'chess',
+    26: 'plus',
+    27: 'trashcan',
+    29: 'tweet',
+    31: 'followartist',
+    32: 'unfollowArtist',
+    33: 'list',
+    34: 'heart',
+    35: 'updatesquare',
+    36: 'location',
+    37: 'image',
+    38: 'image',
+    39: 'trophy',
+    40: 'clan',
+    41: 'clanRole',
+    42: 'card',
+    43: 'donation',
+    44: 'clan',
+    45: 'clanRole',
+    46: 'temperature',
+    47: 'weather',
+    48: 'bitcoin',
+    49: 'ethereum',
+    50: 'video',
+    51: 'typing',
+    52: 'updatesquare',
+    53: 'message',
+    54: 'trophy',
+    55: 'plus',
+    56: 'plus',
+    57: 'trophy',
+    58: 'clan',
+    59: 'clock',
+    60: 'commit',
+    61: 'commit',
+    62: 'commit',
+    63: 'commit',
+    64: 'commit',
+    65: 'commit'
+  }
+
+  public icons: { [key: string]: IconDefinition} = {
+    'message': faMessage,
+    'ping': faAt,
+    'tweet': faTwitter,
+    'sheet': faFileCirclePlus,
+    'update': faPenToSquare,
+    'typing': faFont,
+    'join': faRightToBracket,
+    'remove': faUserSlash,
+    'ban': faCircleMinus,
+    'unban': faUserCheck,
+    'messages': faComments,
+    'newsquare': faSquarePlus,
+    'minusquare': faSquareMinus,
+    'updatesquare': faSquarePen,
+    'delsquare': faSquareXmark,
+    'pin': faThumbTack,
+    'email': faEnvelope,
+    'commit': faCodeCommit,
+    'chess': faChess,
+    'unfollowArtist': faUserXmark,
+    'followartist': faUserPlus,
+    'music': faMusic,
+    'list': faList,
+    'heart': faHeartCirclePlus,
+    'location': faLocationDot,
+    'image': faImage,
+    'plus': faPlus,
+    'trashcan': faTrashCan,
+    'trophy': faTrophy,
+    'clan': faLandmark,
+    'clanRole': faPersonCircleExclamation,
+    'card': faAddressCard,
+    'donation': faHandHoldingMedical,
+    'temperature': faTemperatureHalf,
+    'weather': faCloudSunRain,
+    'bitcoin': faBitcoin,
+    'ethereum': faEthereum,
+    'clock': faClock,
+    'video': faVideo
+  }
+  public trimColors: { [key: string]: string} = {
+    'discord': '#7289da',
+    'twitter': '#00ACEE',
+    'google': '#e6e6e6',
+    'sheet': '#22a565',
+    'email': '#0066FF',
+    'spotify': '#1DB954',
+    'chess': '#769656',
+    'clashroyale': '#329abb',
+    'clashofclans': '#5e1a1a',
+    'weather': '#309ce7',
+    'coingecko': '#8cc63f',
+    'twitch': '#8c44f7',
+    'linkedin': '#0e76a8',
+    'trello': '#1574ef',
+    'tft': '#f77f3e',
+    'brawlstar': '#9d00c3',
+    'datetime': '#1574ef'
+  }
+  public modalTitles: { [key: string]: string} = {
+    'action': 'Add an action',
+    'reaction': 'Add a reaction'
+  }
+  public subModalTitles: { [key: string]: string} = {
+    'action': 'Select an action',
+    'reaction': 'Select a reaction'
+  }
+  constructor() { }
+
+}

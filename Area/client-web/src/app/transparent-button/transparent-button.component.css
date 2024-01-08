@@ -1,0 +1,20 @@
+.btn-container {
+    padding: 0.5rem 3rem;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.2s ease all 0s;
+}
+
+.btn-container:hover {
+    transition: 0.2s ease all 0s;
+    background: #005792 !important;
+}
+
+.btn-text {
+    margin: 0;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}

@@ -1,0 +1,9 @@
+C:\Users\eliot\Documents\EPITECH\area\ActionBackend\ActionBackend\out\ActionBackend.exe
+C:\Users\eliot\Documents\EPITECH\area\ActionBackend\ActionBackend\out\ActionBackend.dll
+C:\Users\eliot\Documents\EPITECH\area\ActionBackend\ActionBackend\out\ActionBackend.deps.json
+C:\Users\eliot\Documents\EPITECH\area\ActionBackend\ActionBackend\out\ActionBackend.runtimeconfig.json
+C:\Users\eliot\Documents\EPITECH\area\ActionBackend\ActionBackend\out\ActionBackend.pdb
+C:\Users\eliot\Documents\EPITECH\area\ActionBackend\ActionBackend\out\Savage.Data.MySqlClient.dll
+C:\Users\eliot\Documents\EPITECH\area\ActionBackend\ActionBackend\out\MySqlConnector.dll
+C:\Users\eliot\Documents\EPITECH\area\ActionBackend\ActionBackend\out\Savage.OptimizedDataReader.dll
+C:\Users\eliot\Documents\EPITECH\area\ActionBackend\ActionBackend\out\Savage.Data.dll

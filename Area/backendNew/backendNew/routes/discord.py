@@ -1,0 +1,74 @@
+from django.urls import path
+from backendNew.views import discord
+
+# The discord/ route contains all the routes about discord's API.
+urlpatterns = [
+    path(
+        'login',
+        discord.login
+    ),
+    path(
+        'callback',
+        discord.callback
+    ),
+    path(
+        'login_profile',
+        discord.login_profile
+    ),
+    path(
+        'callback_profile',
+        discord.callback_profile
+    ),
+    path(
+        'setToken',
+        discord.setToken
+    ),
+    path(
+        'getGuilds',
+        discord.getGuilds
+    ),
+    path(
+        'user/updateStatus',
+        discord.updateStatus
+    ),
+    path(
+        'user/typing',
+        discord.userTyping
+    ),
+    path(
+        'user/join',
+        discord.userJoin
+    ),
+    path(
+        'user/remove',
+        discord.userRemove
+    ),
+    path(
+        'user/ban',
+        discord.userBan
+    ),
+    path(
+        'user/unban',
+        discord.userUnban
+    ),
+    path(
+        'messages/channel',
+        discord.messageChannel
+    ),
+    path(
+        'channel/create',
+        discord.channelCreate
+    ),
+    path(
+        'channel/update',
+        discord.channelUpdate
+    ),
+    path(
+        'channel/delete',
+        discord.channelDelete
+    ),
+    path(
+        'channel/pins',
+        discord.pinsUpdate
+    ),
+]

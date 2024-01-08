@@ -1,0 +1,233 @@
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    overflow-y: scroll;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+#return-btn {
+    width: fit-content;
+    height: 3vh;
+    background: #FFFFFF;
+    padding: 1rem 1rem;
+    border-radius: 100rem;
+    position: fixed;
+    left: 5vh;
+    top: 5vh;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.2s ease all 0s;
+}
+
+.edit-area {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #FFFFFF;
+    width: 4vh;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 100rem;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: 0.2s ease all 0s;
+}
+
+.edit-area:hover {
+    background: #e1e1e1;
+    transition: 0.2s ease all 0s;
+}
+
+.not-connected {
+    background: #ffd6d6 !important;
+}
+
+.connected {
+    background: #d6ffd8 !important;
+}
+
+.connect-oauth {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background: #0066FF;
+    width: 4vh;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 100rem;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: 0.2s ease all 0s;
+}
+
+.connect-oauth:hover {
+    background: #0153cf;
+    transition: 0.2s ease all 0s;
+}
+
+.pfp-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#input-pfp {
+    display: none;
+}
+
+.connected-oauth {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background: #538008;
+    width: 4vh;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 100rem;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: 0.2s ease all 0s;
+}
+
+.pen-icon {
+    font-size: 4vh;
+    color: #1e1e1e;
+}
+
+.connect-icon {
+    font-size: 4vh;
+    color: #FFFFFF;
+}
+
+.connected-icon {
+    font-size: 4vh;
+    color: #FFFFFF;
+}
+
+#return-btn:hover {
+    background: #dadada;
+    transition: 0.2s ease all 0s;
+}
+
+.profile-pic {
+    position: relative;
+    border-radius: 100rem;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.3);
+}
+
+.connected-with-container {
+    position: relative;
+    width: 50%;
+    right: 10%;
+    height: 80%;
+    align-self: center;
+    background: #dadada;
+    border-radius: 2rem;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    overflow-y: scroll;
+}
+
+.connect-service-title {
+    color:rgba(0, 0, 0, 0.8);
+
+}
+
+.oauth-item {
+    position: relative;
+    width: 90%;
+    border-radius: 100rem;
+    background: #ffffff;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 0;
+    margin: 1rem 0;
+}
+
+.action-plateform {
+    margin: 0;
+}
+
+.text-action-flex {
+    height: fit-content;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 1rem;
+}
+
+.logo-action {
+    position: relative;
+    width: 4vh;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 100rem;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.img-and-edit-container {
+    position: relative;
+    height: 30vh;
+    width: 30vh;
+    display: flex;
+    margin-bottom: 2vh;
+}
+
+.info-left-container {
+    position: relative;
+    height: 80vh;
+    padding: 10vh;
+    width: 25%;
+    overflow: hidden;
+}
+
+.profile-full-name {
+    position: relative;
+    color: #FFFFFF;
+    width: 80%;
+    font-size: 3vh;
+}
+
+.profile-email {
+    position: relative;
+    color: #FFFFFF;
+    width: 80%;
+    font-size: 2vh;
+    font-weight: 400;
+}
+
+.info-left-blue {
+    top: -20%;
+    left: -70%;
+    rotate: 5deg;
+    position: absolute;
+    background: #0066FF;
+    height: 130%;
+    width: 150%;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.3);
+}

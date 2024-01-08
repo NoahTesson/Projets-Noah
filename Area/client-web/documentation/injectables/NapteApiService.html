@@ -1,0 +1,2705 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>client-web documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">client-web documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >NapteApiService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/services/napte-api.service.ts</code>
+        </p>
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#allAreaPossibilities" >allAreaPossibilities</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#AxiosClient" >AxiosClient</a>
+                            </li>
+                            <li>
+                                <a href="#userEmail" >userEmail</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#userProfile" >userProfile</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#authLogin" >authLogin</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#authSignup" >authSignup</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#createArea" >createArea</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getAboutJson" >getAboutJson</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getAllAreaPossibilities" >getAllAreaPossibilities</a>
+                            </li>
+                            <li>
+                                <a href="#getAreaItemById" >getAreaItemById</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getDiscordGuilds" >getDiscordGuilds</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getPossibleAreasFromPlateform" >getPossibleAreasFromPlateform</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getServiceStatus" >getServiceStatus</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getTrelloBoards" >getTrelloBoards</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getTwitterProfileAccess" >getTwitterProfileAccess</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getUserAreaById" >getUserAreaById</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getUserAreas" >getUserAreas</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getUserProfile" >getUserProfile</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#isUserTokenValid" >isUserTokenValid</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#login" >login</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#registerApiToken" >registerApiToken</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#removeAreaById" >removeAreaById</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#requestResetPassword" >requestResetPassword</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#resetPassword" >resetPassword</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#signUp" >signUp</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#signupGithub" >signupGithub</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#updateArea" >updateArea</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#userExists" >userExists</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/services/napte-api.service.ts:55</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="authLogin"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>authLogin</b></span>
+                        <a href="#authLogin"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>authLogin(email: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, token: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, tokenProvider: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="465"
+                            class="link-to-prism">src/app/services/napte-api.service.ts:465</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>email</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>token</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>tokenProvider</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;boolean&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="authSignup"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>authSignup</b></span>
+                        <a href="#authSignup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>authSignup(email: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, name: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, surname: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, token: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, tokenProvider: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="506"
+                            class="link-to-prism">src/app/services/napte-api.service.ts:506</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>email</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>surname</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>token</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>tokenProvider</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;boolean&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createArea"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>createArea</b></span>
+                        <a href="#createArea"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createArea(title: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, description: string | undefined, action: <a href="../undefineds/AreaChosenDetails.html" target="_self">AreaChosenDetails</a>, reactions: <a href="../undefineds/AreaChosenDetails.html" target="_self">AreaChosenDetails[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="241"
+                            class="link-to-prism">src/app/services/napte-api.service.ts:241</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>title</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>description</td>
+                                    <td>
+                                            <code>string | undefined</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>action</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/typealiases.html#AreaChosenDetails" target="_self" >AreaChosenDetails</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>reactions</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/typealiases.html#AreaChosenDetails" target="_self" >AreaChosenDetails[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAboutJson"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getAboutJson</b></span>
+                        <a href="#getAboutJson"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getAboutJson()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="149"
+                            class="link-to-prism">src/app/services/napte-api.service.ts:149</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;string&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAllAreaPossibilities"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getAllAreaPossibilities</b></span>
+                        <a href="#getAllAreaPossibilities"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getAllAreaPossibilities()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="313"
+                            class="link-to-prism">src/app/services/napte-api.service.ts:313</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;literal type&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAreaItemById"></a>
+                    <span class="name">
+                        <span ><b>getAreaItemById</b></span>
+                        <a href="#getAreaItemById"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAreaItemById(type: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="368"
+                            class="link-to-prism">src/app/services/napte-api.service.ts:368</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#AreaObject" target="_self" >AreaObject</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDiscordGuilds"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getDiscordGuilds</b></span>
+                        <a href="#getDiscordGuilds"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getDiscordGuilds()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="109"
+                            class="link-to-prism">src/app/services/napte-api.service.ts:109</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#DiscordGuilds" target="_self" >Promise&lt;DiscordGuilds[]&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPossibleAreasFromPlateform"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getPossibleAreasFromPlateform</b></span>
+                        <a href="#getPossibleAreasFromPlateform"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getPossibleAreasFromPlateform(plateform: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, type: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="283"
+                            class="link-to-prism">src/app/services/napte-api.service.ts:283</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>plateform</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#AreaDbObject" target="_self" >Promise&lt;AreaDbObject[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getServiceStatus"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getServiceStatus</b></span>
+                        <a href="#getServiceStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getServiceStatus()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="183"
+                            class="link-to-prism">src/app/services/napte-api.service.ts:183</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#ServiceStatus" target="_self" >Promise&lt;ServiceStatus[]&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getTrelloBoards"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getTrelloBoards</b></span>
+                        <a href="#getTrelloBoards"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getTrelloBoards()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="129"
+                            class="link-to-prism">src/app/services/napte-api.service.ts:129</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#DiscordGuilds" target="_self" >Promise&lt;DiscordGuilds[]&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getTwitterProfileAccess"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getTwitterProfileAccess</b></span>
+                        <a href="#getTwitterProfileAccess"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getTwitterProfileAccess(token: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="488"
+                            class="link-to-prism">src/app/services/napte-api.service.ts:488</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>token</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserAreaById"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getUserAreaById</b></span>
+                        <a href="#getUserAreaById"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getUserAreaById(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="412"
+                            class="link-to-prism">src/app/services/napte-api.service.ts:412</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#UserArea" target="_self" >Promise&lt;UserArea&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserAreas"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getUserAreas</b></span>
+                        <a href="#getUserAreas"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getUserAreas()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="396"
+                            class="link-to-prism">src/app/services/napte-api.service.ts:396</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#UserArea" target="_self" >Promise&lt;UserArea[]&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserProfile"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getUserProfile</b></span>
+                        <a href="#getUserProfile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getUserProfile()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="372"
+                            class="link-to-prism">src/app/services/napte-api.service.ts:372</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#UserProfile" target="_self" >Promise&lt;UserProfile | undefined&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isUserTokenValid"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>isUserTokenValid</b></span>
+                        <a href="#isUserTokenValid"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>isUserTokenValid(provider: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="165"
+                            class="link-to-prism">src/app/services/napte-api.service.ts:165</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>provider</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="login"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>login</b></span>
+                        <a href="#login"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>login(email: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, password: string | undefined)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="87"
+                            class="link-to-prism">src/app/services/napte-api.service.ts:87</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>email</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>password</td>
+                                    <td>
+                                            <code>string | undefined</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;boolean&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="registerApiToken"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>registerApiToken</b></span>
+                        <a href="#registerApiToken"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>registerApiToken(token: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, tokenProvider: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, email: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="531"
+                            class="link-to-prism">src/app/services/napte-api.service.ts:531</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>token</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>tokenProvider</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>email</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;boolean&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeAreaById"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>removeAreaById</b></span>
+                        <a href="#removeAreaById"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>removeAreaById(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="436"
+                            class="link-to-prism">src/app/services/napte-api.service.ts:436</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;boolean&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="requestResetPassword"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>requestResetPassword</b></span>
+                        <a href="#requestResetPassword"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>requestResetPassword(email: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="209"
+                            class="link-to-prism">src/app/services/napte-api.service.ts:209</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>email</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetPassword"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>resetPassword</b></span>
+                        <a href="#resetPassword"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>resetPassword(resetPassToken: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, newPassword: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="225"
+                            class="link-to-prism">src/app/services/napte-api.service.ts:225</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>resetPassToken</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>newPassword</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="signUp"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>signUp</b></span>
+                        <a href="#signUp"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>signUp(name: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, surname: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, email: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, password: string | undefined)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="63"
+                            class="link-to-prism">src/app/services/napte-api.service.ts:63</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>surname</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>email</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>password</td>
+                                    <td>
+                                            <code>string | undefined</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;boolean&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="signupGithub"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>signupGithub</b></span>
+                        <a href="#signupGithub"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>signupGithub()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="300"
+                            class="link-to-prism">src/app/services/napte-api.service.ts:300</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateArea"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>updateArea</b></span>
+                        <a href="#updateArea"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateArea(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, title: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, description: string | undefined, action: <a href="../undefineds/AreaChosenDetails.html" target="_self">AreaChosenDetails</a>, reactions: <a href="../undefineds/AreaChosenDetails.html" target="_self">AreaChosenDetails[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="262"
+                            class="link-to-prism">src/app/services/napte-api.service.ts:262</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>title</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>description</td>
+                                    <td>
+                                            <code>string | undefined</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>action</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/typealiases.html#AreaChosenDetails" target="_self" >AreaChosenDetails</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>reactions</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/typealiases.html#AreaChosenDetails" target="_self" >AreaChosenDetails[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userExists"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>userExists</b></span>
+                        <a href="#userExists"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>userExists(email: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="450"
+                            class="link-to-prism">src/app/services/napte-api.service.ts:450</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>email</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="allAreaPossibilities"></a>
+                    <span class="name">
+                        <span ><b>allAreaPossibilities</b></span>
+                        <a href="#allAreaPossibilities"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>literal type</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/services/napte-api.service.ts:54</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="AxiosClient"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>AxiosClient</b></span>
+                        <a href="#AxiosClient"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>axios.create({
+    baseURL: &#x27;https://stirring-settling-mutt.ngrok-free.app&#x27;,
+    timeout: 10000,
+  })</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/services/napte-api.service.ts:58</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userEmail"></a>
+                    <span class="name">
+                        <span ><b>userEmail</b></span>
+                        <a href="#userEmail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&quot;&quot;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/services/napte-api.service.ts:53</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userProfile"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>userProfile</b></span>
+                        <a href="#userProfile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/typealiases.html#UserProfile" target="_self" >UserProfile | undefined</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/services/napte-api.service.ts:55</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import axios, { AxiosResponse } from &#x27;axios&#x27;;
+import { AreaChosenDetails } from &#x27;../area-add-modal/area-add-modal.component&#x27;;
+
+const successRespCode: number &#x3D; 201;
+
+export type UserProfile &#x3D; {
+  name: string;
+  surname: string;
+  id: number;
+  email: string;
+  profilePicture: string | undefined;
+}
+
+export type DiscordGuilds &#x3D; {
+  id: string,
+  name: string
+}
+
+export type AreaObject &#x3D; {
+  id: number,
+  plateform: string,
+  action: string
+}
+
+export type AreaDbObject &#x3D; {
+  id?: number,
+  name?: string,
+  action?: string,
+  error?: string
+}
+
+export type ServiceStatus &#x3D; {
+  service: string;
+  logged_in: boolean;
+}
+
+export type UserArea &#x3D; {
+  id: number,
+  title: string | undefined,
+  description: string | undefined,
+  trigger_id: number,
+  action_id: number,
+  triggerToken: string | undefined,
+  actionToken: string | undefined
+}
+
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+export class NapteApiService {
+
+  userEmail: string &#x3D; &quot;&quot;;
+  allAreaPossibilities: { [key: string] : AreaObject[] } &#x3D; {};
+  public userProfile: UserProfile | undefined;
+  constructor() { }
+
+  private AxiosClient &#x3D; axios.create({
+    baseURL: &#x27;https://stirring-settling-mutt.ngrok-free.app&#x27;,
+    timeout: 10000,
+  });
+
+  async signUp(name: string, surname: string, email: string, password: string | undefined): Promise&lt;boolean&gt; {
+    try {
+      const resp : AxiosResponse &#x3D; await this.AxiosClient.post(&#x60;/user/signup&#x60;, {
+          name: name,
+          surname: surname,
+          email: email,
+          password: password
+      },
+      {
+        headers: {
+        &#x27;Content-Type&#x27;: &#x27;application/json&#x27;
+      }})
+      localStorage.removeItem(&#x27;auth_token&#x27;)
+      if (resp.data[&#x27;token&#x27;]) {
+        localStorage.setItem(&#x27;auth_token&#x27;, resp.data[&#x27;token&#x27;])
+        return true;
+      }
+      return false;
+    } catch (err) {
+      console.log(err);
+      return false;
+    }
+  }
+
+  async login(email: string, password: string | undefined): Promise&lt;boolean&gt; {
+    try {
+      const resp : AxiosResponse &#x3D; await this.AxiosClient.post(&#x60;/user/signin&#x60;, {
+        email: email,
+        password: password
+      },
+      {
+        headers: {
+        &#x27;Content-Type&#x27;: &#x27;application/json&#x27;
+      }})
+      localStorage.removeItem(&#x27;auth_token&#x27;)
+      if (resp.data[&#x27;token&#x27;]) {
+        localStorage.setItem(&#x27;auth_token&#x27;, resp.data[&#x27;token&#x27;])
+        return true;
+      }
+      return false;
+    } catch (err) {
+      console.log(err);
+      return false;
+    }
+  }
+
+  async getDiscordGuilds(): Promise&lt;DiscordGuilds[]&gt; {
+    let guilds: DiscordGuilds[] &#x3D; [];
+
+    try {
+      const resp: AxiosResponse &#x3D; await this.AxiosClient.get(&#x60;/api/discord/getGuilds&#x60;,
+      {
+        headers: {
+        &#x27;Content-Type&#x27;: &#x27;application/json&#x27;,
+        &quot;ngrok-skip-browser-warning&quot;: &quot;69420&quot;,
+        &#x27;X-Authorization-Key&#x27;: localStorage.getItem(&#x27;auth_token&#x27;)
+      }})
+      console.log(resp.data);
+      guilds &#x3D; resp.data.map((item: DiscordGuilds) &#x3D;&gt; item);
+      return guilds;
+    } catch (err) {
+      console.log(err);
+      return guilds;
+    }
+  }
+
+  async getTrelloBoards(): Promise&lt;DiscordGuilds[]&gt; {
+    let boards: DiscordGuilds[] &#x3D; [];
+
+    try {
+      const resp: AxiosResponse &#x3D; await this.AxiosClient.get(&#x60;/api/trello/getOrganization&#x60;,
+      {
+        headers: {
+        &#x27;Content-Type&#x27;: &#x27;application/json&#x27;,
+        &quot;ngrok-skip-browser-warning&quot;: &quot;69420&quot;,
+        &#x27;X-Authorization-Key&#x27;: localStorage.getItem(&#x27;auth_token&#x27;)
+      }})
+      console.log(resp.data);
+      boards &#x3D; resp.data.map((item: DiscordGuilds) &#x3D;&gt; item);
+      return boards;
+    } catch (err) {
+      console.log(err);
+      return boards;
+    }
+  }
+
+  async getAboutJson(): Promise&lt;string&gt; {
+    try {
+      const resp: AxiosResponse &#x3D; await this.AxiosClient.get(&#x60;/about.json&#x60;,
+      {
+        headers: {
+        &#x27;Content-Type&#x27;: &#x27;application/json&#x27;,
+        &quot;ngrok-skip-browser-warning&quot;: &quot;69420&quot;
+      }})
+      console.log(resp.data);
+      return JSON.stringify(resp.data);
+    } catch (err) {
+      console.log(err);
+      return &quot;error&quot;;
+    }
+  }
+
+  async isUserTokenValid(provider: string) {
+    try {
+      const resp : AxiosResponse &#x3D; await this.AxiosClient.post(&#x60;/user/isTokenValid&#x60;, {
+        provider: provider
+      },
+      {
+        headers: {
+        &#x27;Content-Type&#x27;: &#x27;application/json&#x27;,
+        &#x27;X-Authorization-Key&#x27;: localStorage.getItem(&#x27;auth_token&#x27;)
+      }})
+      return true;
+    } catch (err) {
+      console.log(err);
+      return false;
+    }
+    
+  }
+
+  async getServiceStatus(): Promise&lt;ServiceStatus[]&gt; {
+    try {
+      let statusServices: ServiceStatus[] &#x3D; [];
+      const resp : AxiosResponse &#x3D; await this.AxiosClient.get(&#x60;/api/getStatus&#x60;,
+      {
+        headers: {
+        &#x27;Content-Type&#x27;: &#x27;application/json&#x27;,
+        &quot;ngrok-skip-browser-warning&quot;: &quot;69420&quot;,
+        &#x27;X-Authorization-Key&#x27;: localStorage.getItem(&#x27;auth_token&#x27;)
+      }})
+      resp.data.status.forEach((item: { [key: string]: string }) &#x3D;&gt; {
+        console.log(item);
+        if (Object.keys(item).length &lt; 1) {
+          return;
+        }
+        statusServices.push({
+          service: Object.entries(item)[0][0],
+          logged_in: Object.entries(item)[0][1] !&#x3D;&#x3D; &quot;No&quot;
+        })
+      });
+      return statusServices;
+    } catch (err) {
+      return []
+    }
+  }
+
+  async requestResetPassword(email: string) {
+    try {
+      const resp : AxiosResponse &#x3D; await this.AxiosClient.post(&#x60;/user/resetPassword&#x60;, {
+        email: email
+      },
+      {
+        headers: {
+        &#x27;Content-Type&#x27;: &#x27;application/json&#x27;
+      }})
+      return true;
+    } catch (err) {
+      console.log(err);
+      return false;
+    }
+  }
+
+  async resetPassword(resetPassToken: string, newPassword: string) {
+      try {
+        const resp : AxiosResponse &#x3D; await this.AxiosClient.post(&#x60;/user/resetPassword/${resetPassToken}&#x60;, {
+          password: newPassword
+        },
+        {
+          headers: {
+          &#x27;Content-Type&#x27;: &#x27;application/json&#x27;
+        }})
+        return true;
+      } catch (err) {
+        console.log(err);
+        return false;
+      }
+  }
+
+  async createArea(title: string, description: string | undefined, action: AreaChosenDetails, reactions: AreaChosenDetails[]) {
+    try {
+      const resp : AxiosResponse &#x3D; await this.AxiosClient.post(&#x60;/areas/create&#x60;, {
+        title: title,
+        description: description,
+        triggerId: action.id,
+        actionId: reactions[0].id,
+        triggerToken: action.actionToken,
+        actionToken: reactions[0].actionToken
+      },
+      {
+        headers: {
+        &#x27;Content-Type&#x27;: &#x27;application/json&#x27;,
+        &#x27;X-Authorization-Key&#x27;: localStorage.getItem(&#x27;auth_token&#x27;)
+      }})
+      return true;
+    } catch (error) {
+      return false;
+    }
+  }
+
+  async updateArea(id: number, title: string, description: string | undefined, action: AreaChosenDetails, reactions: AreaChosenDetails[]) {
+    try {
+      const resp : AxiosResponse &#x3D; await this.AxiosClient.put(&#x60;/areas/${id}&#x60;, {
+        title: title,
+        description: description,
+        triggerId: action.id,
+        actionId: reactions[0].id,
+        triggerToken: action.actionToken,
+        actionToken: reactions[0].actionToken
+      },
+      {
+        headers: {
+        &#x27;Content-Type&#x27;: &#x27;application/json&#x27;,
+        &#x27;X-Authorization-Key&#x27;: localStorage.getItem(&#x27;auth_token&#x27;)
+      }})
+      return true;
+    } catch (error) {
+      return false;
+    }
+  }
+
+  async getPossibleAreasFromPlateform(plateform: string, type: string): Promise&lt;AreaDbObject[]&gt; {
+    try {
+      const resp : AxiosResponse &#x3D; await this.AxiosClient.post(&#x60;/areas/getServicesActions&#x60;, {
+        type: type,
+        name: plateform
+      },
+      {
+        headers: {
+        &#x27;Content-Type&#x27;: &#x27;application/json&#x27;,
+        &#x27;X-Authorization-Key&#x27;: localStorage.getItem(&#x27;auth_token&#x27;)
+      }})
+      return resp.data;
+    } catch (error) {
+      return [{error: &#x27;can\&#x27;t retrieve areas for plateform&#x27;}];
+    }
+  }
+
+  async signupGithub(): Promise&lt;void&gt; {
+    try {
+      const actionResp : AxiosResponse &#x3D; await this.AxiosClient.get(&#x60;/api/github/login&#x60;,
+      {
+        headers: {
+        &#x27;Content-Type&#x27;: &#x27;application/json&#x27;,
+      }})
+    } catch (error) {
+      console.log(error);
+      return;
+    }
+  }
+
+  async getAllAreaPossibilities(): Promise&lt;{ [key: string] : AreaObject[] }&gt; {
+    if (this.allAreaPossibilities[&#x27;action&#x27;]) {
+      return this.allAreaPossibilities;
+    }
+    let areaOptions: { [key: string] : AreaObject[] } &#x3D; {
+      &#x27;action&#x27;: [],
+      &#x27;reaction&#x27;: []
+    };
+    try {
+      const actionResp : AxiosResponse &#x3D; await this.AxiosClient.post(&#x60;/areas/getServices&#x60;, {
+        type: &#x27;Reaction&#x27;
+      },
+      {
+        headers: {
+        &#x27;Content-Type&#x27;: &#x27;application/json&#x27;,
+        &#x27;X-Authorization-Key&#x27;: localStorage.getItem(&#x27;auth_token&#x27;)
+      }})
+
+      const reactionResp : AxiosResponse &#x3D; await this.AxiosClient.post(&#x60;/areas/getServices&#x60;, {
+        type: &#x27;Action&#x27;
+      },
+      {
+        headers: {
+        &#x27;Content-Type&#x27;: &#x27;application/json&#x27;,
+        &#x27;X-Authorization-Key&#x27;: localStorage.getItem(&#x27;auth_token&#x27;)
+      }})
+      await actionResp.data.forEach(async (item: string) &#x3D;&gt; {
+        const areaObjectResp &#x3D; await this.getPossibleAreasFromPlateform(item, &#x27;Reaction&#x27;);
+        areaObjectResp.forEach((item: AreaDbObject) &#x3D;&gt; {
+          areaOptions[&#x27;action&#x27;].push({
+            id: item.id || -1,
+            plateform: item.name || &quot;error&quot;,
+            action: item.action || &quot;error&quot;
+          })
+        })
+        
+      });
+      await reactionResp.data.forEach(async (item: string) &#x3D;&gt; {
+        const areaObjectResp &#x3D; await this.getPossibleAreasFromPlateform(item, &#x27;Action&#x27;);
+        areaObjectResp.forEach((item: AreaDbObject) &#x3D;&gt; {
+          areaOptions[&#x27;reaction&#x27;].push({
+            id: item.id || -1,
+            plateform: item.name || &quot;error&quot;,
+            action: item.action || &quot;error&quot;
+          })
+        })
+        
+      });
+      this.allAreaPossibilities &#x3D; areaOptions;
+      return this.allAreaPossibilities;
+    } catch (error) {
+      return {};
+    }
+  }
+
+  getAreaItemById(type: string, id: number): AreaObject {
+    return this.allAreaPossibilities[type].filter(item &#x3D;&gt; item.id &#x3D;&#x3D;&#x3D; id)[0];
+  }
+
+  async getUserProfile(): Promise&lt;UserProfile | undefined&gt; {
+    try {
+      if (!this.userProfile) {
+        const resp : AxiosResponse &#x3D; await this.AxiosClient.get(&#x60;/user/me&#x60;,
+        {
+          headers: {
+          &#x27;Content-Type&#x27;: &#x27;application/json&#x27;,
+          &quot;ngrok-skip-browser-warning&quot;: &quot;69420&quot;,
+          &#x27;X-Authorization-Key&#x27;: localStorage.getItem(&#x27;auth_token&#x27;)
+        }})
+        this.userProfile &#x3D; {
+          name: resp.data.name,
+          surname: resp.data.surname,
+          email: resp.data.email,
+          id: resp.data.id,
+          profilePicture: resp.data.profilePicture
+        }
+      }
+      return this.userProfile;
+    } catch (error) {
+      return;
+    }
+  }
+
+  async getUserAreas(): Promise&lt;UserArea[]&gt; {
+    try {
+      await this.getAllAreaPossibilities();
+      const resp : AxiosResponse &#x3D; await this.AxiosClient.get(&#x60;/areas/listByUser&#x60;,
+      {
+        headers: {
+        &#x27;Content-Type&#x27;: &#x27;application/json&#x27;,
+        &quot;ngrok-skip-browser-warning&quot;: &quot;69420&quot;,
+        &#x27;X-Authorization-Key&#x27;: localStorage.getItem(&#x27;auth_token&#x27;)
+      }})
+      return resp.data;
+    } catch (error) {
+      return [];
+    }
+  }
+
+  async getUserAreaById(id: number): Promise&lt;UserArea&gt; {
+    try {
+      const resp : AxiosResponse &#x3D; await this.AxiosClient.get(&#x60;/areas/${id}&#x60;,
+      {
+        headers: {
+          &#x27;Content-Type&#x27;: &#x27;application/json&#x27;,
+          &quot;ngrok-skip-browser-warning&quot;: &quot;69420&quot;,
+          &#x27;X-Authorization-Key&#x27;: localStorage.getItem(&#x27;auth_token&#x27;)
+      }})
+      console.log(resp.data)
+      return resp.data;
+    } catch (error) {
+      return {
+        id: -1,
+        title: undefined,
+        description: undefined,
+        actionToken: undefined,
+        triggerToken: undefined,
+        trigger_id: -1,
+        action_id: -1
+      };
+    }
+  }
+
+  async removeAreaById(id: number): Promise&lt;boolean&gt; {
+    try {
+      const resp : AxiosResponse &#x3D; await this.AxiosClient.delete(&#x60;/areas/${id}&#x60;,
+      {
+        headers: {
+          &#x27;Content-Type&#x27;: &#x27;application/json&#x27;,
+          &#x27;X-Authorization-Key&#x27;: localStorage.getItem(&#x27;auth_token&#x27;)
+      }})
+      return true;
+    } catch (error) {
+      return false;
+    }
+  }
+
+  async userExists(email: string) {
+    try {
+      const resp : AxiosResponse &#x3D; await this.AxiosClient.post(&#x60;/user/exists&#x60;, {
+        email: email
+      },
+      {
+        headers: {
+        &#x27;Content-Type&#x27;: &#x27;application/json&#x27;
+      }})
+    return true;
+    } catch (error) {
+      return false;
+    }
+  }
+
+  async authLogin(email: string, token: string, tokenProvider: string): Promise&lt;boolean&gt; {
+    try {
+      const resp : AxiosResponse &#x3D; await this.AxiosClient.post(&#x60;/user/singin_auth&#x60;, {
+          email: email,
+          token: token,
+          provider: tokenProvider
+      },
+      {
+        headers: {
+        &#x27;Content-Type&#x27;: &#x27;application/json&#x27;
+      }})
+      localStorage.removeItem(&#x27;auth_token&#x27;)
+      if (resp.data[&#x27;token&#x27;]) {
+        localStorage.setItem(&#x27;auth_token&#x27;, resp.data[&#x27;token&#x27;])
+        return true;
+      }
+      return false;
+    } catch (err) {
+      console.log(err);
+      return false;
+    }
+  }
+
+  async getTwitterProfileAccess(token: string) {
+    try {
+      const raw_token_resp &#x3D; await this.AxiosClient.post(&#x27;/api/twitter/auth&#x27;, {
+        access_code: token,
+        redirect_uri: &#x27;http://localhost:8081&#x27;
+      },
+      {
+        headers: {
+          &#x27;Content-Type&#x27;: &#x27;application/json&#x27;
+        }
+      })
+      const token_resp &#x3D; raw_token_resp.data;
+      return token_resp;
+    } catch (err) {
+      return {}
+    }
+  }
+
+  async authSignup(email: string, name: string, surname: string, token: string, tokenProvider: string): Promise&lt;boolean&gt; {
+    try {
+      const resp : AxiosResponse &#x3D; await this.AxiosClient.post(&#x60;/user/signup_auth&#x60;, {
+        name: name,
+        surname: surname,
+        email: email,
+        token: token,
+        provider: tokenProvider
+      },
+      {
+        headers: {
+        &#x27;Content-Type&#x27;: &#x27;application/json&#x27;
+      }})
+      localStorage.removeItem(&#x27;auth_token&#x27;)
+      if (resp.data[&#x27;token&#x27;]) {
+        localStorage.setItem(&#x27;auth_token&#x27;, resp.data[&#x27;token&#x27;])
+        return true;
+      }
+      return false;
+    } catch (err) {
+      console.log(err);
+      return false;
+    }
+  }
+
+  async registerApiToken(token: string, tokenProvider: string, email: string): Promise&lt;boolean&gt; {
+    try {
+      const resp : AxiosResponse &#x3D; await this.AxiosClient.post(&#x60;/api/${tokenProvider}/setToken&#x60;, {
+        token: token
+      },
+      {
+        headers: {
+        &#x27;Content-Type&#x27;: &#x27;application/json&#x27;,
+        &#x27;X-Authorization-Key&#x27;: localStorage.getItem(&#x27;auth_token&#x27;)
+      }})
+      return true;
+    } catch (err) {
+      console.log(err);
+      return false;
+    }
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'NapteApiService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

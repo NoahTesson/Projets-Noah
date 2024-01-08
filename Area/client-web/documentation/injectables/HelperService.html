@@ -1,0 +1,645 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>client-web documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">client-web documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >HelperService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/helper.service.ts</code>
+        </p>
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#icons" >icons</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#idIconsMap" >idIconsMap</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#modalTitles" >modalTitles</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#subModalTitles" >subModalTitles</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#trimColors" >trimColors</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="136" class="link-to-prism">src/app/helper.service.ts:136</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+
+            <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="icons"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>icons</b></span>
+                        <a href="#icons"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>literal type</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    &#x27;message&#x27;: faMessage,
+    &#x27;ping&#x27;: faAt,
+    &#x27;tweet&#x27;: faTwitter,
+    &#x27;sheet&#x27;: faFileCirclePlus,
+    &#x27;update&#x27;: faPenToSquare,
+    &#x27;typing&#x27;: faFont,
+    &#x27;join&#x27;: faRightToBracket,
+    &#x27;remove&#x27;: faUserSlash,
+    &#x27;ban&#x27;: faCircleMinus,
+    &#x27;unban&#x27;: faUserCheck,
+    &#x27;messages&#x27;: faComments,
+    &#x27;newsquare&#x27;: faSquarePlus,
+    &#x27;minusquare&#x27;: faSquareMinus,
+    &#x27;updatesquare&#x27;: faSquarePen,
+    &#x27;delsquare&#x27;: faSquareXmark,
+    &#x27;pin&#x27;: faThumbTack,
+    &#x27;email&#x27;: faEnvelope,
+    &#x27;commit&#x27;: faCodeCommit,
+    &#x27;chess&#x27;: faChess,
+    &#x27;unfollowArtist&#x27;: faUserXmark,
+    &#x27;followartist&#x27;: faUserPlus,
+    &#x27;music&#x27;: faMusic,
+    &#x27;list&#x27;: faList,
+    &#x27;heart&#x27;: faHeartCirclePlus,
+    &#x27;location&#x27;: faLocationDot,
+    &#x27;image&#x27;: faImage,
+    &#x27;plus&#x27;: faPlus,
+    &#x27;trashcan&#x27;: faTrashCan,
+    &#x27;trophy&#x27;: faTrophy,
+    &#x27;clan&#x27;: faLandmark,
+    &#x27;clanRole&#x27;: faPersonCircleExclamation,
+    &#x27;card&#x27;: faAddressCard,
+    &#x27;donation&#x27;: faHandHoldingMedical,
+    &#x27;temperature&#x27;: faTemperatureHalf,
+    &#x27;weather&#x27;: faCloudSunRain,
+    &#x27;bitcoin&#x27;: faBitcoin,
+    &#x27;ethereum&#x27;: faEthereum,
+    &#x27;clock&#x27;: faClock,
+    &#x27;video&#x27;: faVideo
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/app/helper.service.ts:69</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="idIconsMap"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>idIconsMap</b></span>
+                        <a href="#idIconsMap"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>literal type</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    1: &#x27;update&#x27;,
+    2: &#x27;typing&#x27;,
+    3: &#x27;join&#x27;,
+    4: &#x27;remove&#x27;,
+    5: &#x27;ban&#x27;,
+    6: &#x27;unban&#x27;,
+    7: &#x27;messages&#x27;,
+    8: &#x27;newsquare&#x27;,
+    9: &#x27;updatesquare&#x27;,
+    10: &#x27;delsquare&#x27;,
+    11: &#x27;pin&#x27;,
+    12: &#x27;tweet&#x27;,
+    14: &#x27;sheet&#x27;,
+    15: &#x27;email&#x27;,
+    16: &#x27;commit&#x27;,
+    17: &#x27;newsquare&#x27;,
+    18: &#x27;minusquare&#x27;,
+    19: &#x27;unfollowArtist&#x27;,
+    20: &#x27;followartist&#x27;,
+    21: &#x27;followartist&#x27;,
+    22: &#x27;unfollowArtist&#x27;,
+    23: &#x27;music&#x27;,
+    24: &#x27;music&#x27;,
+    25: &#x27;chess&#x27;,
+    26: &#x27;plus&#x27;,
+    27: &#x27;trashcan&#x27;,
+    29: &#x27;tweet&#x27;,
+    31: &#x27;followartist&#x27;,
+    32: &#x27;unfollowArtist&#x27;,
+    33: &#x27;list&#x27;,
+    34: &#x27;heart&#x27;,
+    35: &#x27;updatesquare&#x27;,
+    36: &#x27;location&#x27;,
+    37: &#x27;image&#x27;,
+    38: &#x27;image&#x27;,
+    39: &#x27;trophy&#x27;,
+    40: &#x27;clan&#x27;,
+    41: &#x27;clanRole&#x27;,
+    42: &#x27;card&#x27;,
+    43: &#x27;donation&#x27;,
+    44: &#x27;clan&#x27;,
+    45: &#x27;clanRole&#x27;,
+    46: &#x27;temperature&#x27;,
+    47: &#x27;weather&#x27;,
+    48: &#x27;bitcoin&#x27;,
+    49: &#x27;ethereum&#x27;,
+    50: &#x27;video&#x27;,
+    51: &#x27;typing&#x27;,
+    52: &#x27;updatesquare&#x27;,
+    53: &#x27;message&#x27;,
+    54: &#x27;trophy&#x27;,
+    55: &#x27;plus&#x27;,
+    56: &#x27;plus&#x27;,
+    57: &#x27;trophy&#x27;,
+    58: &#x27;clan&#x27;,
+    59: &#x27;clock&#x27;
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/helper.service.ts:10</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="modalTitles"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>modalTitles</b></span>
+                        <a href="#modalTitles"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>literal type</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    &#x27;action&#x27;: &#x27;Add an action&#x27;,
+    &#x27;reaction&#x27;: &#x27;Add a reaction&#x27;
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="129" class="link-to-prism">src/app/helper.service.ts:129</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="subModalTitles"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>subModalTitles</b></span>
+                        <a href="#subModalTitles"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>literal type</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    &#x27;action&#x27;: &#x27;Select an action&#x27;,
+    &#x27;reaction&#x27;: &#x27;Select a reaction&#x27;
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="133" class="link-to-prism">src/app/helper.service.ts:133</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="trimColors"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>trimColors</b></span>
+                        <a href="#trimColors"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>literal type</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    &#x27;discord&#x27;: &#x27;#7289da&#x27;,
+    &#x27;twitter&#x27;: &#x27;#00ACEE&#x27;,
+    &#x27;google&#x27;: &#x27;#e6e6e6&#x27;,
+    &#x27;sheet&#x27;: &#x27;#22a565&#x27;,
+    &#x27;email&#x27;: &#x27;#0066FF&#x27;,
+    &#x27;spotify&#x27;: &#x27;#1DB954&#x27;,
+    &#x27;chess&#x27;: &#x27;#769656&#x27;,
+    &#x27;clashroyale&#x27;: &#x27;#329abb&#x27;,
+    &#x27;clashofclans&#x27;: &#x27;#5e1a1a&#x27;,
+    &#x27;weather&#x27;: &#x27;#309ce7&#x27;,
+    &#x27;coingecko&#x27;: &#x27;#8cc63f&#x27;,
+    &#x27;twitch&#x27;: &#x27;#8c44f7&#x27;,
+    &#x27;linkedin&#x27;: &#x27;#0e76a8&#x27;,
+    &#x27;trello&#x27;: &#x27;#1574ef&#x27;,
+    &#x27;tft&#x27;: &#x27;#f77f3e&#x27;,
+    &#x27;brawlstar&#x27;: &#x27;#9d00c3&#x27;,
+    &#x27;datetime&#x27;: &#x27;#1574ef&#x27;
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="110" class="link-to-prism">src/app/helper.service.ts:110</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { faBitcoin, faEthereum, faTwitter } from &#x27;@fortawesome/free-brands-svg-icons&#x27;;
+import { IconDefinition, faAddressCard, faClock, faComments, faEnvelope, faImage, faMessage, faPenToSquare, faSquareMinus, faSquarePlus, faTrashCan } from &#x27;@fortawesome/free-regular-svg-icons&#x27;;
+import { faAt, faChess, faCircleMinus, faCirclePlus, faCloudSunRain, faCodeCommit, faFileCirclePlus, faFont, faHandHoldingMedical, faHeartCirclePlus, faLandmark, faList, faLocationDot, faMusic, faPersonCircleExclamation, faPlus, faRightToBracket, faSquarePen, faSquareXmark, faTemperatureHalf, faThumbTack, faTrophy, faUserCheck, faUserPlus, faUserSlash, faUserXmark, faVideo } from &#x27;@fortawesome/free-solid-svg-icons&#x27;;
+
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+export class HelperService {
+  public idIconsMap: { [key: number]: string} &#x3D; {
+    1: &#x27;update&#x27;,
+    2: &#x27;typing&#x27;,
+    3: &#x27;join&#x27;,
+    4: &#x27;remove&#x27;,
+    5: &#x27;ban&#x27;,
+    6: &#x27;unban&#x27;,
+    7: &#x27;messages&#x27;,
+    8: &#x27;newsquare&#x27;,
+    9: &#x27;updatesquare&#x27;,
+    10: &#x27;delsquare&#x27;,
+    11: &#x27;pin&#x27;,
+    12: &#x27;tweet&#x27;,
+    14: &#x27;sheet&#x27;,
+    15: &#x27;email&#x27;,
+    16: &#x27;commit&#x27;,
+    17: &#x27;newsquare&#x27;,
+    18: &#x27;minusquare&#x27;,
+    19: &#x27;unfollowArtist&#x27;,
+    20: &#x27;followartist&#x27;,
+    21: &#x27;followartist&#x27;,
+    22: &#x27;unfollowArtist&#x27;,
+    23: &#x27;music&#x27;,
+    24: &#x27;music&#x27;,
+    25: &#x27;chess&#x27;,
+    26: &#x27;plus&#x27;,
+    27: &#x27;trashcan&#x27;,
+    29: &#x27;tweet&#x27;,
+    31: &#x27;followartist&#x27;,
+    32: &#x27;unfollowArtist&#x27;,
+    33: &#x27;list&#x27;,
+    34: &#x27;heart&#x27;,
+    35: &#x27;updatesquare&#x27;,
+    36: &#x27;location&#x27;,
+    37: &#x27;image&#x27;,
+    38: &#x27;image&#x27;,
+    39: &#x27;trophy&#x27;,
+    40: &#x27;clan&#x27;,
+    41: &#x27;clanRole&#x27;,
+    42: &#x27;card&#x27;,
+    43: &#x27;donation&#x27;,
+    44: &#x27;clan&#x27;,
+    45: &#x27;clanRole&#x27;,
+    46: &#x27;temperature&#x27;,
+    47: &#x27;weather&#x27;,
+    48: &#x27;bitcoin&#x27;,
+    49: &#x27;ethereum&#x27;,
+    50: &#x27;video&#x27;,
+    51: &#x27;typing&#x27;,
+    52: &#x27;updatesquare&#x27;,
+    53: &#x27;message&#x27;,
+    54: &#x27;trophy&#x27;,
+    55: &#x27;plus&#x27;,
+    56: &#x27;plus&#x27;,
+    57: &#x27;trophy&#x27;,
+    58: &#x27;clan&#x27;,
+    59: &#x27;clock&#x27;
+  }
+
+  public icons: { [key: string]: IconDefinition} &#x3D; {
+    &#x27;message&#x27;: faMessage,
+    &#x27;ping&#x27;: faAt,
+    &#x27;tweet&#x27;: faTwitter,
+    &#x27;sheet&#x27;: faFileCirclePlus,
+    &#x27;update&#x27;: faPenToSquare,
+    &#x27;typing&#x27;: faFont,
+    &#x27;join&#x27;: faRightToBracket,
+    &#x27;remove&#x27;: faUserSlash,
+    &#x27;ban&#x27;: faCircleMinus,
+    &#x27;unban&#x27;: faUserCheck,
+    &#x27;messages&#x27;: faComments,
+    &#x27;newsquare&#x27;: faSquarePlus,
+    &#x27;minusquare&#x27;: faSquareMinus,
+    &#x27;updatesquare&#x27;: faSquarePen,
+    &#x27;delsquare&#x27;: faSquareXmark,
+    &#x27;pin&#x27;: faThumbTack,
+    &#x27;email&#x27;: faEnvelope,
+    &#x27;commit&#x27;: faCodeCommit,
+    &#x27;chess&#x27;: faChess,
+    &#x27;unfollowArtist&#x27;: faUserXmark,
+    &#x27;followartist&#x27;: faUserPlus,
+    &#x27;music&#x27;: faMusic,
+    &#x27;list&#x27;: faList,
+    &#x27;heart&#x27;: faHeartCirclePlus,
+    &#x27;location&#x27;: faLocationDot,
+    &#x27;image&#x27;: faImage,
+    &#x27;plus&#x27;: faPlus,
+    &#x27;trashcan&#x27;: faTrashCan,
+    &#x27;trophy&#x27;: faTrophy,
+    &#x27;clan&#x27;: faLandmark,
+    &#x27;clanRole&#x27;: faPersonCircleExclamation,
+    &#x27;card&#x27;: faAddressCard,
+    &#x27;donation&#x27;: faHandHoldingMedical,
+    &#x27;temperature&#x27;: faTemperatureHalf,
+    &#x27;weather&#x27;: faCloudSunRain,
+    &#x27;bitcoin&#x27;: faBitcoin,
+    &#x27;ethereum&#x27;: faEthereum,
+    &#x27;clock&#x27;: faClock,
+    &#x27;video&#x27;: faVideo
+  }
+  public trimColors: { [key: string]: string} &#x3D; {
+    &#x27;discord&#x27;: &#x27;#7289da&#x27;,
+    &#x27;twitter&#x27;: &#x27;#00ACEE&#x27;,
+    &#x27;google&#x27;: &#x27;#e6e6e6&#x27;,
+    &#x27;sheet&#x27;: &#x27;#22a565&#x27;,
+    &#x27;email&#x27;: &#x27;#0066FF&#x27;,
+    &#x27;spotify&#x27;: &#x27;#1DB954&#x27;,
+    &#x27;chess&#x27;: &#x27;#769656&#x27;,
+    &#x27;clashroyale&#x27;: &#x27;#329abb&#x27;,
+    &#x27;clashofclans&#x27;: &#x27;#5e1a1a&#x27;,
+    &#x27;weather&#x27;: &#x27;#309ce7&#x27;,
+    &#x27;coingecko&#x27;: &#x27;#8cc63f&#x27;,
+    &#x27;twitch&#x27;: &#x27;#8c44f7&#x27;,
+    &#x27;linkedin&#x27;: &#x27;#0e76a8&#x27;,
+    &#x27;trello&#x27;: &#x27;#1574ef&#x27;,
+    &#x27;tft&#x27;: &#x27;#f77f3e&#x27;,
+    &#x27;brawlstar&#x27;: &#x27;#9d00c3&#x27;,
+    &#x27;datetime&#x27;: &#x27;#1574ef&#x27;
+  }
+  public modalTitles: { [key: string]: string} &#x3D; {
+    &#x27;action&#x27;: &#x27;Add an action&#x27;,
+    &#x27;reaction&#x27;: &#x27;Add a reaction&#x27;
+  }
+  public subModalTitles: { [key: string]: string} &#x3D; {
+    &#x27;action&#x27;: &#x27;Select an action&#x27;,
+    &#x27;reaction&#x27;: &#x27;Select a reaction&#x27;
+  }
+  constructor() { }
+
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'HelperService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

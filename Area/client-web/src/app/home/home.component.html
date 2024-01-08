@@ -1,0 +1,64 @@
+<div id="main-container" [hidden]="this.logged_in">
+    <div [hidden]="!askForEmail" id="email-ask-overlay">
+        <form id="email-ask-form" (ngSubmit)="submitEmail()">
+            <h2 class="email-ask-title">Enter your E-mail</h2>
+            <input placeholder="example@gmail.com" class="input-box" name="email" [(ngModel)]="emailInput" type="email" />
+            <button class="submit-btn" type="submit">Submit</button>
+        </form>
+    </div>
+    <div [hidden]="!displayForgotPasswordModal" id="password-ask-overlay">
+        <form id="password-ask-form" (ngSubmit)="submitNewPassword()">
+            <h2 class="email-ask-title">Reset your password</h2>
+            <input placeholder="new password" class="input-box" name="email" [(ngModel)]="newPasswordInput" type="password" />
+            <input placeholder="confirm new password" class="input-box" name="email" [(ngModel)]="confirmNewPasswordInput" type="password" />
+            <h2 class="error-message">{{ errorMessageToDisplay }}</h2>
+            <button class="submit-btn" type="submit">Submit</button>
+        </form>
+    </div>
+    <img class="logo-blue-top" [src]="themeService.onlineAssets['blue_logo_shadow']" [ngStyle]="{'width': phoneDisplay ? '50%' : '33vw'}"/>
+    <div id="btn-container">
+        <a class="login-redirect-btn" href="../../assets/app.apk" download="app.apk">Download APK</a>
+        <button class="signup-redirect-btn" (click)="navigateToPage('/register')">Sign Up</button>
+        <button class="login-redirect-btn" (click)="navigateToPage('/login')">Login</button>
+    </div>
+    <div class="content-div" [ngStyle]="{'width': phoneDisplay ? '70%' : '25%', 'margin-top': phoneDisplay ? '25vh' : '15%'}">
+        <h1 class="content-title">Connecting <span style="color: #0066FF">Actions</span>,</h1>
+        <h1 class="content-title indent">Igniting <span style="color: #0066FF">Reactions</span></h1>
+        <p class="content-paragraphe" [ngStyle]="">Napte is an application designed to automate tasks and processes within your business. With Napte, you can create automated workflows by connecting various applications and services, allowing you to save time and optimize your operations. The application provides a user-friendly interface that enables you to easily configure triggers and actions to automate tasks such as task creation, data synchronization, and much more. With Napte, you can streamline your business processes, enhance productivity, and reduce human errors by automating repetitive tasks, allowing you to focus on more strategic activities.</p>
+    </div>
+    <img [hidden]="phoneDisplay" id="globe-home-page" [src]="themeService.onlineAssets['globe']"/>
+    <div id="rect-diagonal-footer"></div>
+</div>
+<div id="logged-in-main-container" [hidden]="!this.logged_in">
+    <div id="nav-areas" [ngStyle]="{'width': !phoneDisplay ? '40%' : '80%'}">
+        <div class="nav-item" [ngStyle]="{'width': !phoneDisplay ? '30%' : '50%'}">
+            <div class="selected-item"></div>
+            <h2 class="nav-item-text selected-item-text">Areas</h2>
+        </div>
+    </div>
+    <div id="rect-diagonal-header"></div>
+    <img class="logo-blue-top-registered" [src]="themeService.onlineAssets['blue_logo_shadow']" [ngStyle]="{'width': phoneDisplay ? '30%' : '20vw'}" />
+    <img class="profile-picture" [src]="userProfile && userProfile.profilePicture ? userProfile.profilePicture : themeService.onlineAssets['profile_default']" (click)="navigateToPage('/profile')">
+    <a class="login-redirect-btn-ah" href="../../assets/app.apk" download="app.apk">Download APK</a>
+    <div id="area-container">
+        <div id="rect-area-blue"></div>
+        <h2 class="areas-title">My Areas</h2>
+        <div id="areas-container">
+            <app-area-card
+                *ngFor="let area of userAreas"
+                [title]="area.title ? area.title : ''"
+                width="400px"
+                height="25vh"
+                [actionLogo]="api.getAreaItemById('action', area.trigger_id).plateform.toLowerCase() + '_logo'"
+                [trimColor]="themeService.trimColors[api.getAreaItemById('action', area.trigger_id).plateform.toLowerCase()]"
+                [reactionLogoList]="getLogoListForReactions([area.action_id])"
+                [areaId]="area.id.toString()"
+            ></app-area-card>
+            <div class="add-area">
+                <div class="add-area-icon" (click)="navigateToPage('/areacreate')">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" height="auto" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

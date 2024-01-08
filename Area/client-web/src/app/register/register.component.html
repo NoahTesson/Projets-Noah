@@ -1,0 +1,39 @@
+<div class="container">
+    <img class="logo-blue-top" [src]="themeService.onlineAssets['blue_logo_shadow']" [ngStyle]="{'width': phoneDisplay ? '50%' : '33vw'}"/>
+    <img class="wave-banner" [src]="themeService.onlineAssets['vertical_wave']"/>
+    <div class="blue-banner-completion" [hidden]="phoneDisplay"></div>
+    <div id="main-div" [ngStyle]="{'padding-bottom': phoneDisplay ? '500px' : '0'}">
+        <div id="external-signup" [hidden]="phoneDisplay" [ngStyle]="{'width': phoneDisplay ? '0': '30%'}">
+            <button [hidden]="phoneDisplay" (click)="oauthSignIn()" class="ext-login-btn"><img class="login-with-logo" [src]="themeService.onlineAssets['google_logo']"/>Register with Google</button>
+            <button [hidden]="phoneDisplay" (click)="twitterOauthSignIn()" class="ext-login-btn"><img class="login-with-logo" [src]="themeService.onlineAssets['twitter_logo']"/>Register with X</button>
+            <button [hidden]="phoneDisplay" (click)="githubOauthSignIn()" class="ext-login-btn"><img class="login-with-logo" [src]="themeService.onlineAssets['github_logo']"/>Register with Github</button>
+            <button [hidden]="phoneDisplay" (click)="discordOauthSignIn()" class="ext-login-btn"><img class="login-with-logo" [src]="themeService.onlineAssets['discord_logo']"/>Register with Discord</button>
+            <button [hidden]="phoneDisplay" (click)="spotifyOauthSignIn()" class="ext-login-btn"><img class="login-with-logo" [src]="themeService.onlineAssets['spotify_logo']"/>Register with Spotify</button>
+            <h2 class="already-member big-margin-t" [hidden]="phoneDisplay">Already a member ?</h2>
+            <button [hidden]="phoneDisplay" class="submit-btn small-margin-t" (click)="navigateToPage('/login')">Login instead</button>
+        </div>
+        <h1 class="italic" [hidden]="phoneDisplay">Or</h1>
+        <form id="signup-box" (ngSubmit)="signupSubmit()" [ngStyle]="{'width': phoneDisplay ? '80%': '27%', 'top': phoneDisplay ? '250px' : '5%'}">
+            <h1 class="weight-light title-signup">Get On Board</h1>
+            <button [hidden]="!phoneDisplay" (click)="oauthSignIn()" class="ext-login-btn" [ngStyle]="{'width': '80%'}"><img class="login-with-logo" [src]="themeService.onlineAssets['google_logo']"/>Register with Google</button><br/>
+            <button [hidden]="!phoneDisplay" (click)="twitterOauthSignIn()" class="ext-login-btn" [ngStyle]="{'width': '80%'}"><img class="login-with-logo" [src]="themeService.onlineAssets['twitter_logo']"/>Register with X</button><br/>
+            <button [hidden]="!phoneDisplay" (click)="githubOauthSignIn()" class="ext-login-btn" [ngStyle]="{'width': '80%'}"><img class="login-with-logo" [src]="themeService.onlineAssets['github_logo']"/>Register with Github</button><br/>
+            <button [hidden]="!phoneDisplay" (click)="discordOauthSignIn()" class="ext-login-btn" [ngStyle]="{'width': '80%'}"><img class="login-with-logo" [src]="themeService.onlineAssets['discord_logo']"/>Register with Discord</button><br/>
+            <button [hidden]="!phoneDisplay" (click)="spotifyOauthSignIn()" class="ext-login-btn" [ngStyle]="{'width': '80%'}"><img class="login-with-logo" [src]="themeService.onlineAssets['spotify_logo']"/>Register with Spotify</button><br/>
+            <label class="weight-light input-label"  for="name">Name</label><br/>
+            <input class="input-box" name="name" [(ngModel)]="formName" type="text"/>
+            <label class="weight-light input-label" for="lastname">Last Name</label><br/>
+            <input class="input-box" name="lastname" [(ngModel)]="formLastname" type="text"/>
+            <label class="weight-light input-label" for="email">Email</label><br/>
+            <input class="input-box" name="email" [(ngModel)]="formEmail" type="email"/>
+            <label class="weight-light input-label" for="password">Password</label><br/>
+            <input class="input-box" name="password" [(ngModel)]="formPass" type="password"/>
+            <h2 class="error-message" [hidden]="errorMsg === undefined">{{ errorMsg }}</h2>
+            <button type="submit" class="submit-btn">Sign Up</button>
+            <br/>
+            <h2 class="already-member big-margin-t" [hidden]="!phoneDisplay">Already a member ?</h2>
+            <button [hidden]="!phoneDisplay" class="submit-btn small-margin-t" (click)="navigateToPage('/login')">Login instead</button>
+        </form>
+    </div>
+    <button class="home-redirect-btn" (click)="navigateToPage('/')">Home</button>
+</div>
