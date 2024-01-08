@@ -4,7 +4,7 @@ Vous pouvez retrouver ici quelques-uns de mes plus gros projets.
 
 ## Area
 
-Le projet Area contiste à créer une interface web et mobile ou un utilisateur peut se connecter pour créer des "Area", des actions et reactions avec des services. Par exemple, lorsque je recois un message sur discord, je lance une musique spécifique sur spotify.
+Le projet Area consiste à créer une interface web et mobile ou un utilisateur peut se connecter pour créer des "Area", des actions et réactions avec des services. Par exemple, lorsque je reçois un message sur discord, je lance une musique spécifique sur spotify.
 
 - **[Projet Area](https://github.com/NoahTesson/Projets-Noah/tree/main/Area)** : L'ensemble du projet Area
 - **[Mobile](https://github.com/NoahTesson/Projets-Noah/tree/main/Area/client-mobile)** : Le dossier qui contient le code de l'application mobile d'Area
