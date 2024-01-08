@@ -1,0 +1,17 @@
+.container-home {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    overflow-y: scroll;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-home .container-cards {
+    flex: 1;
+    gap: 50px;
+    width: 95vw;
+    display: flex;
+    flex-wrap: wrap;
+}

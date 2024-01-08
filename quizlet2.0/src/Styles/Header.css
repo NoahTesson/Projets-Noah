@@ -1,0 +1,46 @@
+@font-face {
+    font-family: ADELIA;
+    src: url(../Fonts/ADELIA.otf);
+}
+
+.header {
+    background-color: rgb(255, 100, 126);
+    color: white;
+    padding: 10px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 10px;
+}
+
+.nav-list li:last-child {
+    margin-right: 0;
+  }
+
+h1 {
+    color: #EF2222;
+    font-family: ADELIA;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    font-size: 15px;
+    color: #EF2222;
+    text-decoration: none;
+    font-family: ADELIA;
+}
+
+a:hover {
+    color: rgb(255, 213, 213);
+}

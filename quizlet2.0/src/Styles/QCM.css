@@ -1,0 +1,38 @@
+@font-face {
+    font-family: ADELIA;
+    src: url(../Fonts/ADELIA.otf);
+}
+
+.container-QCM {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    height: 45vh;
+}
+
+.container-questions {
+    border-radius: 20px 20px 0 0;
+}
+
+.container-response {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid black;
+    border-radius: 0 0 20px 20px;
+}
+
+.box-response {
+    width: 50%;
+    border: none;
+    background: none;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+}
+
+.container-response p {
+    color: white;
+    font-family: ADELIA;
+}
+
+.box-response:hover p {
+    color: #EF2222;
+}

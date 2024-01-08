@@ -1,0 +1,38 @@
+
+.cardListe {
+    width: 55vh;
+    height: 15vh;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(255, 100, 126);
+}
+
+.cardListe:hover {
+    border-bottom: 3px solid #EF2222;
+}
+
+.cardListe h2 {
+    color: black;
+}
+
+
+.container-up {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.container-down {
+    width: 7vw;
+    height: 3vh;
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    border-radius: 30px;
+    justify-content: center;
+    background-color: #EF2222;
+}
+
+.trash-liste {
+    all: unset;
+}

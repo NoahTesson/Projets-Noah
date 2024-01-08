@@ -1,0 +1,46 @@
+@font-face {
+    font-family: ADELIA;
+    src: url(../Fonts/ADELIA.otf);
+}
+
+.play {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-playing {
+    width: 50vw;
+    height: 45vh;
+    border-radius: 20px;
+    background-color: rgb(255, 100, 126);
+}
+
+.container-box {
+    gap: 30px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.container-box p {
+    font-family: ADELIA;
+    color: white;
+}
+
+.box-choose-play {
+    border: none;
+    background: none;
+    width: 10vw;
+    height: 7vh;
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 100, 126);
+}
+
+.box-choose-play:hover p {
+    color: #EF2222;
+}

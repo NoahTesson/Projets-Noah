@@ -1,0 +1,91 @@
+@font-face {
+    font-family: ADELIA;
+    src: url(../Fonts/ADELIA.otf);
+}
+
+.container-listes {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.img-charlotte {
+    width: 80px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.name-liste {
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.name-liste .text-input {
+    width: 99%;
+    height: 130%;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    background-color: white;
+    font-family: Eczar-SemiBold;
+}
+
+::placeholder {
+    color: gray;
+    font-family: ADELIA;
+    font-size: 10px;
+    opacity: 1; /* Firefox */
+}
+
+.name-liste .text-input:focus {
+    border-color: #FF647E;
+}
+
+.add-liste {
+    margin-bottom: 100px;
+    margin-top: 5vh;
+    height: 5vh;
+    width: 6vw;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent; 
+    background-color: #FF647E;
+}
+
+.add-liste:hover {
+    background-color: #EF2222;
+}
+
+.add-liste .text {
+    font-weight: bold;
+}
+
+.btn_add_card {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+.img-plus {
+    height: 20px;
+    width: 20px;
+}
+
+::-webkit-scrollbar {
+    display:none;
+}
