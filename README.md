@@ -12,3 +12,7 @@ Le projet Area consiste à créer une interface web et mobile ou un utilisateur 
 - **[Serveur](https://github.com/NoahTesson/Projets-Noah/tree/main/Area/backendNew)** : Le dossier qui contient le code du serveur d'Area
 
 ## quizlet2.0
+
+Le projet quizlet2.0 consistait à refaire avec les fonctionnalités de base le site quizlet. (projet pas fini)
+
+- **[quizlet2.0](https://github.com/NoahTesson/Projets-Noah/tree/main/quizlet2.0)** : l'ensemble du projet quizlet2.0
