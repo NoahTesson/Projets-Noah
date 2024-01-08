@@ -11,6 +11,12 @@ Le projet Area consiste à créer une interface web et mobile ou un utilisateur 
 - **[Web](https://github.com/NoahTesson/Projets-Noah/tree/main/Area/client-web)** : Le dossier qui contient le code du site web d'Area
 - **[Serveur](https://github.com/NoahTesson/Projets-Noah/tree/main/Area/backendNew)** : Le dossier qui contient le code du serveur d'Area
 
+## survivornext
+
+Le projet survivornext consistait à créer une application mobile qui permettait a un utilisateur d'ajouter des widgets tel que la météo, l'heure, des mini jeux comme un puissance 4, un morpion...
+
+- **[survivornext](https://github.com/NoahTesson/Projets-Noah/tree/main/survivornext)** : l'ensemble du projet survivornext
+
 ## quizlet2.0
 
 Le projet quizlet2.0 consistait à refaire avec les fonctionnalités de base le site quizlet. (projet pas fini)
