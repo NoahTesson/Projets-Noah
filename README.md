@@ -2,13 +2,14 @@
 
 Vous pouvez retrouver ici quelques-uns de mes plus gros projets.
 
-## Contenu du Projet
+## Area
 
 Ce projet contient les éléments suivants :
 
-- **[Dossier 1](https://github.com/NoahTesson/Projets-Noah/tree/main/Area)** : Description du contenu du dossier 1.
-- **[Dossier 2](lien_vers_dossier_2)** : Description du contenu du dossier 2.
-- **[Fichier Principal](lien_vers_fichier_principal)** : Description du fichier principal ou du point d'entrée du projet.
+- **[Projet Area](https://github.com/NoahTesson/Projets-Noah/tree/main/Area)** : L'ensemble du projet Area
+- **[Mobile](https://github.com/NoahTesson/Projets-Noah/tree/main/Area/client-mobile)** : Le dossier qui contient le code de l'application mobile d'Area
+- **[Web](https://github.com/NoahTesson/Projets-Noah/tree/main/Area/client-web)** : Le dossier qui contient le code du site web d'Area
+- **[Serveur](https://github.com/NoahTesson/Projets-Noah/tree/main/Area/backendNew)** : Le dossier qui contient le code du serveur d'Area
 
 ## Installation
 
